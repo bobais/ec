@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block body %}
+    <b>Ahoj Liborku.<b>
+    
+    <form method="POST" action="/collect" name="collector">
+        {{ form.csrf_token }}
+        {{ form.email.label }}
+        {{ form.email }}
+        <input type="submit" value="Odevzdej...">
+    </form>
+{% endblock %}
+

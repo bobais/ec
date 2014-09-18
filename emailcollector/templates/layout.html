@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Language" content="cs">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>{% block title%}So long suckersss!{% endblock %}</title>
+	</head>
+	<body bgcolor="white" text="black">
+        {% block uppermenu %}
+        <ul>
+            <li><a href="{{ url_for('index') }}">INDEX</a></li>
+            <li><a href="{{ url_for('list_emails') }}">LIST</a></li>
+            <li><a href="{{ url_for('delete') }}">DELETE ALL</a></li>
+        </ul>
+        {% endblock %}
+        {% block body %}{% endblock %}
+	</body>
+</html>
